@@ -1,10 +1,17 @@
 <div class="bg-dark border-right p-3" id="sidebar">
-  <div class="text-light">GifsApp</div>
+  <div class="text-light"><h2>GifsApp</h2></div>
   <hr class="text-light" />
 
-  <div class="list-group list-reset " >
-    <a *ngFor="let item of gifsHistorial" href="#"
-    (click)="buscar(item)"
-    class="list-group-item list-group-item-action" routerLinkActive="router-link-active" > {{item | titlecase}} </a>
+  <div class="list-group list-reset">
+    <h2 class="text-light">Historial de busqueda</h2>
+    <a
+      *ngFor="let item of gifsHistorial"
+      href="#"
+      (click)="buscar(item)"
+      class="list-group-item list-group-item-action"
+      routerLinkActive="router-link-active"
+    >
+      {{ item | titlecase }}
+    </a>
   </div>
 </div>
